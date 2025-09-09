@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Calculator</title>
+    <meta name="description" content="Calculate student grades instantly with our easy-to-use grade calculator. Enter marks (0-100) and get instant results with grade scale A-E.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="holizontal-Wrapper">
+    <div class="container">
+        <h1>Student Grade Calculator</h1>
+        
+        <form id="gradeForm">
+            <div class="form-group">
+                <label for="marks">Enter Student Marks (0-100):</label>
+                <input 
+                    type="number" 
+                    id="marks" 
+                    name="marks" 
+                    min="0" 
+                    max="100" 
+                    placeholder="Enter marks between 0 and 100"
+                    required
+                >
+            </div>
+            
+            <div class="button-group">
+                <button type="submit" class="btn-primary">Calculate Grade</button>
+                <button type="button" id="resetBtn" class="btn-secondary">Reset</button>
+            </div>
+        </form>
+
+        <div id="error" class="error"></div>
+
+        <div id="result" class="result">
+            <div id="gradeDisplay" class="grade"></div>
+            <div id="resultText" class="result-text"></div>
+            <div id="resultMark" class="result-mark"></div>
+        </div>
+
+        <div class="grade-scale">
+            <h3>Grade Scale Reference</h3>
+            <div class="scale-item">
+                <span class="scale-grade" style="color: var(--success)">A</span>
+                <span>80 - 100 marks</span>
+            </div>
+            <div class="scale-item">
+                <span class="scale-grade" style="color: hsl(142, 76%, 50%)">B</span>
+                <span>60 - 79 marks</span>
+            </div>
+            <div class="scale-item">
+                <span class="scale-grade" style="color: var(--warning)">C</span>
+                <span>49 - 59 marks</span>
+            </div>
+            <div class="scale-item">
+                <span class="scale-grade" style="color: hsl(25, 95%, 53%)">D</span>
+                <span>40 - 48 marks</span>
+            </div>
+            <div class="scale-item">
+                <span class="scale-grade" style="color: var(--danger)">E</span>
+                <span>0 - 39 marks</span>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="holizontal-Wrapper">
+<div class="container2">
+        <h1>Speed Detector</h1>
+        <p class="subtitle">Demerit Points Calculator</p>
+        
+        <form id="speedForm">
+            <div class="form-group">
+                <label for="speed">Enter Vehicle Speed (km/h):</label>
+                <input 
+                    type="number" 
+                    id="speed" 
+                    name="speed" 
+                    min="0" 
+                    max="300" 
+                    placeholder="Enter speed in km/h"
+                    required
+                >
+            </div>
+            
+            <div class="button-group">
+                <button type="submit" class="btn-primary">Check Speed</button>
+                <button type="button" id="resetSpeedBtn" class="btn-secondary">Reset</button>
+            </div>
+        </form>
+
+        <div id="speedError" class="error"></div>
+
+        <div id="speedResult" class="result">
+            <div id="speedStatus" class="status"></div>
+            <div id="pointsDisplay" class="points"></div>
+            <div id="warningMessage" class="warning"></div>
+        </div>
+
+        <div class="info-panel">
+            <h3>Speed Limit Information</h3>
+            <div class="info-item">
+                <span class="info-label">Speed Limit:</span>
+                <span class="info-value">70 km/h</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Demerit Points:</span>
+                <span class="info-value">1 point per 5 km/h over limit</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">License Suspension:</span>
+                <span class="info-value">More than 12 points</span>
+            </div>
+        </div>
+    </div>
+    </div>
+     <!-- Net Salary Calculator Section -->
+      <div class="holizontal-Wrapper">
+    <div class="container3">
+        <h1>Net Salary Calculator</h1>
+        <p class="subtitle">Calculate your net salary based on Kenya KRA 2024 tax rates</p>
+        
+        <form id="salaryForm">
+            <div class="form-group">
+                <label for="basicSalary">Basic Salary (KSh):</label>
+                <input 
+                    type="number" 
+                    id="basicSalary" 
+                    name="basicSalary" 
+                    min="0" 
+                    max="10000000"
+                    step="0.01"
+                    placeholder="Enter your basic salary"
+                    required
+                >
+            </div>
+            
+            <div class="form-group">
+                <label for="benefits">Benefits (KSh):</label>
+                <input 
+                    type="number" 
+                    id="benefits" 
+                    name="benefits" 
+                    min="0" 
+                    max="5000000"
+                    step="0.01"
+                    placeholder="Enter benefits (allowances, etc.)"
+                    value="0"
+                >
+            </div>
+            
+            <div class="button-group">
+                <button type="submit" class="btn-primary">Calculate Net Salary</button>
+                <button type="button" id="resetSalaryBtn" class="btn-secondary">Reset</button>
+            </div>
+        </form>
+
+        <div id="salaryError" class="error"></div>
+
+        <div id="salaryResult" class="result">
+            <div class="salary-breakdown">
+                <div class="breakdown-row">
+                    <span class="breakdown-label">Basic Salary:</span>
+                    <span class="breakdown-value" id="displayBasicSalary">-</span>
+                </div>
+                <div class="breakdown-row">
+                    <span class="breakdown-label">Benefits:</span>
+                    <span class="breakdown-value" id="displayBenefits">-</span>
+                </div>
+                <div class="breakdown-row">
+                    <span class="breakdown-label">Gross Salary:</span>
+                    <span class="breakdown-value" id="displayGrossSalary">-</span>
+                </div>
+                <div class="breakdown-row">
+                    <span class="breakdown-label">PAYE Tax:</span>
+                    <span class="breakdown-value" id="displayPAYE">-</span>
+                </div>
+                <div class="breakdown-row">
+                    <span class="breakdown-label">SHIF (2.75%):</span>
+                    <span class="breakdown-value" id="displaySHIF">-</span>
+                </div>
+                <div class="breakdown-row">
+                    <span class="breakdown-label">NSSF (6%):</span>
+                    <span class="breakdown-value" id="displayNSSF">-</span>
+                </div>
+                <div class="breakdown-row">
+                    <span class="breakdown-label">Housing Levy (1.5%):</span>
+                    <span class="breakdown-value" id="displayHousingLevy">-</span>
+                </div>
+                <div class="breakdown-row">
+                    <span class="breakdown-label">Total Deductions:</span>
+                    <span class="breakdown-value" id="displayTotalDeductions">-</span>
+                </div>
+                <div class="breakdown-row">
+                    <span class="breakdown-label">Net Salary:</span>
+                    <span class="breakdown-value net-salary" id="displayNetSalary">-</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-panel">
+            <h3>Tax Information (Kenya KRA 2024)</h3>
+            <div class="info-item">
+                <span class="info-label">Personal Relief:</span>
+                <span class="info-value">KSh 2,400/month</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">PAYE Rates:</span>
+                <span class="info-value">10% - 35% progressive</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">NSSF Maximum:</span>
+                <span class="info-value">KSh 4,320/month</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">SHIF Minimum:</span>
+                <span class="info-value">KSh 300/month</span>
+            </div>
+        </div>
+    </div>
+      </div>
+    
+    <script src="index.js"></script>
+    <script src="speed.js"></script>
+    <script src="sallary.js"></script>
+</body>
+</html>

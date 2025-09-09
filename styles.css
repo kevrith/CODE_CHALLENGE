@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+        min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.holizontal-Wrapper{
+      display: flex;
+  flex-direction: row; /* default, can be omitted */
+  justify-content: center; /* center horizontally */
+  gap: 2rem; /* <== This adds space between the divs */
+  flex-wrap: wrap; /* ensures it wraps on small screens */
+  padding: 1rem;
+}
+.container {
+    background: rgb(221, 157, 157);
+    border-radius: 2rem;
+    box-shadow: black;
+    padding: 2rem;
+    width: auto;
+    max-width: 400px;
+    display: block;
+}
+.container2 {
+    background: rgb(189, 106, 189);
+    border-radius: 2rem;
+    box-shadow: black;
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+}
+.container3 {
+    background: rgb(13, 116, 59);
+    border-radius: 2rem;
+    box-shadow: black;
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    background: rgb(27, 4, 231);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: black;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid rgb(148, 146, 146);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: rgb(56, 150, 238);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+input[type="number"]:invalid {
+    border-color: red;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+button {
+    flex: 1;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background: rgb(56, 150, 238);;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: rgb(56, 150, 238);;
+    transform: translateY(-1px);
+    box-shadow: black;
+}
+
+.btn-secondary {
+    background: rgb(233, 231, 231);
+    color: black;
+    border: 2px solid var(--border);
+}
+
+.btn-secondary:hover {
+    background: var(--border);
+}
+
+.result {
+    background:  rgb(233, 231, 231);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    display: none;
+}
+
+.result.show {
+    display: block;
+}
+
+.grade {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.grade.a { color: rgb(11, 151, 11); }
+.grade.b { color: hsl(142, 76%, 50%); }
+.grade.c { color: orange; }
+.grade.d { color: hsl(25, 95%, 53%); }
+.grade.e { color: red; }
+
+.error {
+    background: red;
+    color: white;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: none;
+}
+
+.error.show {
+    display: block;
+}
+

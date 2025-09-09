@@ -9,7 +9,7 @@ A comprehensive web application featuring three essential calculators: Student G
 
 ## Features
 
-Student Grade Calculator
+# Student Grade Calculator
 Calculate grades based on marks (0-100)
 Grade scale: A (80-100), B (60-79), C (49-59), D (40-48), E (0-39)
 Instant feedback with color-coded results
@@ -45,6 +45,7 @@ Enter basic salary in KSh
 Enter benefits/allowances (optional, defaults to 0)
 Click "Calculate Net Salary"
 View detailed breakdown of deductions and net salary
+
 ## Installation
 You use git clone to be able to download the documents in the GitHub
 
@@ -58,7 +59,7 @@ Git clone git@github.com:kevrith/CODE_CHALLENGE.git
 ```
 
 # Live Link
-[Git] https://kevrith.github.io/CODE_CHALLENGE/
+https://kevrith.github.io/CODE_CHALLENGE/
 
 ## Technologies used
 HTML
@@ -67,7 +68,7 @@ Github
 Javascript
 
 ## Support and contact details
-github.com/hamida-mstafa
+https://github.com/kevrith
 
 ### License
 The content of this site is licensed under the MIT license
